@@ -12,10 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="输入网址"
+        android:text="https://www.baidu.com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="清除" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn"

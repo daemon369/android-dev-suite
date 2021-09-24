@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val input = findViewById<AppCompatEditText>(R.id.input)
+        findViewById<AppCompatTextView>(R.id.clear).setOnClickListener {
+            input.setText("")
+        }
         findViewById<AppCompatTextView>(R.id.btn).setOnClickListener {
             val url = input.editableText?.toString()
             if (url.isNullOrEmpty()) {
