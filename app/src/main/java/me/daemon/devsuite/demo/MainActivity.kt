@@ -17,14 +17,15 @@ class MainActivity : AppCompatActivity() {
             input.setText("")
         }
         findViewById<AppCompatTextView>(R.id.btn).setOnClickListener {
-            val url = input.editableText?.toString()
-            if (url.isNullOrEmpty()) {
-                Toast.makeText(this, "URL不能为空", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-            startActivity(Intent(this, WebViewActivity::class.java).apply {
-                putExtra("url", url)
-            })
+//            val url = input.editableText?.toString()
+//            if (url.isNullOrEmpty()) {
+//                Toast.makeText(this, "URL不能为空", Toast.LENGTH_SHORT).show()
+//                return@setOnClickListener
+//            }
+//            startActivity(Intent(this, WebViewActivity::class.java).apply {
+//                putExtra("url", url)
+//            })
+            startActivity(Intent(this, PackageListActivity::class.java))
         }
     }
 }
