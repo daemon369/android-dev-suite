@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.x.appcompat)
     implementation(libs.x.constraintlayout)
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation(libs.daemon.infrastructure.application)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.x.junit)
