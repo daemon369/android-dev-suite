@@ -35,6 +35,7 @@ private class PackageItemViewHolder(itemView: View) : RecyclerView.ViewHolder(it
     val iconView: ImageView = itemView.findViewById(R.id.iv_icon)
     val nameView: TextView = itemView.findViewById(R.id.tv_name)
     val pkgView: TextView = itemView.findViewById(R.id.tv_package_name)
+    val sourceDirView: TextView = itemView.findViewById(R.id.tv_source_dir)
 }
 
 private class PackageListAdapter : RecyclerView.Adapter<PackageItemViewHolder>() {
@@ -57,6 +58,7 @@ private class PackageListAdapter : RecyclerView.Adapter<PackageItemViewHolder>()
         holder.iconView.setImageDrawable(applicationInfo.loadIcon(application.packageManager))
         holder.nameView.text = applicationInfo.loadLabel(application.packageManager)
         holder.pkgView.text = applicationInfo.packageName
+        holder.sourceDirView.text = applicationInfo.sourceDir
     }
 
     override fun getItemCount(): Int = applicationList.size
