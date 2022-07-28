@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.x.constraintlayout)
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation(libs.daemon.infrastructure.application)
+    implementation("com.google.android.material:material:1.4.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.x.junit)
